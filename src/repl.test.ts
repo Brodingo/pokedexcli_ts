@@ -13,6 +13,10 @@ describe.each([
     {
         input: " hEllO  WorlD  ",
         expected: ["hello", "world"]
+    },
+    {
+        input: " BULbasaur charMANDER  squirtLE ",
+        expected: ["bulbasaur", "charmander", "squirtle"]
     }
 ])("cleanInput($input)", ({ input, expected }) => {
     test(`Expected: ${expected}`, () => {
